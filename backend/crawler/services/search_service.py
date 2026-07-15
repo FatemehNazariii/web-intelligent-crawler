@@ -119,7 +119,6 @@ def search_web(topic, max_results=8):
 
     urls = [item["url"] for item in ranked]
 
-    # fallback برای اینکه همیشه حداقل چند منبع پایه داشته باشیم
     fallback_urls = [
         wikipedia_fallback(topic),
     ]
